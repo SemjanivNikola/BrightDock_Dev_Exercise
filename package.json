@@ -1,0 +1,14 @@
+{
+	"name": "club_house",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"generate": "nuxt generate",
+		"start": "nuxt start"
+	},
+	"dependencies": {
+		"nuxt": "^2.15.4",
+		"vue": "^2.6.12"
+	}
+}
