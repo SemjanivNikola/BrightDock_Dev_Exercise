@@ -101,65 +101,49 @@ a {
 .z-50 {
     z-index: 50;
 }
-/*******************************/
-/*          ELEMENTS          */
-
-.pointer {
-    cursor: pointer;
-}
-.article-img-wrap img {
-    transform: scale(2.4);
-}
-.img-res {
-    width: 100%;
-    height: auto;
-}
-.h-100 {
-    height: inherit;
-}
 /********************************************/
 /*                FONTS                    */
 @font-face {
     font-family: 'Futura PT Heavy';
-    src: url('./assets/fonts/futura-pt/FuturaPTHeavy.eot');
-    src: url('./assets/fonts/futura-pt/FuturaPTHeavy.eot?#iefix') format('embedded-opentype'),
-    url('./assets/fonts/futura-pt/FuturaPTHeavy.woff') format('woff'),
-    url('./assets/fonts/futura-pt/FuturaPTHeavy.ttf')  format('truetype');
+    src: url('../fonts/futura-pt/FuturaPTHeavy.eot');
+    src: url('../fonts/futura-pt/FuturaPTHeavy.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/futura-pt/FuturaPTHeavy.woff') format('woff'),
+    url('../fonts/futura-pt/FuturaPTHeavy.ttf')  format('truetype');
 }
 @font-face {
     font-family: 'Futura PT Light';
-    src: url('./assets/fonts/futura-pt/FuturaPTLight.eot');
-    src: url('./assets/fonts/futura-pt/FuturaPTLight.eot?#iefix') format('embedded-opentype'),
-    url('./assets/fonts/futura-pt/FuturaPTLight.woff') format('woff'),
-    url('./assets/fonts/futura-pt/FuturaPTLight.ttf')  format('truetype');
+    src: url('../fonts/futura-pt/FuturaPTLight.eot');
+    src: url('../fonts/futura-pt/FuturaPTLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/futura-pt/FuturaPTLight.woff') format('woff'),
+    url('../fonts/futura-pt/FuturaPTLight.ttf')  format('truetype');
 }
 @font-face {
     font-family: 'Futura PT Medium';
-    src: url('./assets/fonts/futura-pt/FuturaPTMedium.eot');
-    src: url('./assets/fonts/futura-pt/FuturaPTMedium.eot?#iefix') format('embedded-opentype'),
-    url('./assets/fonts/futura-pt/FuturaPTMedium.woff') format('woff'),
-    url('./assets/fonts/futura-pt/FuturaPTMedium.ttf')  format('truetype');
+    src: url('../fonts/futura-pt/FuturaPTMedium.eot');
+    src: url('../fonts/futura-pt/FuturaPTMedium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/futura-pt/FuturaPTMedium.woff') format('woff'),
+    url('../fonts/futura-pt/FuturaPTMedium.ttf')  format('truetype');
 }
 @font-face {
     font-family: 'Futura PT Demi';
-    src: url('./assets/fonts/futura-pt/FuturaPTDemi.eot');
-    src: url('./assets/fonts/futura-pt/FuturaPTDemi.eot?#iefix') format('embedded-opentype'),
-    url('./assets/fonts/futura-pt/FuturaPTDemi.woff') format('woff'),
-    url('./assets/fonts/futura-pt/FuturaPTDemi.ttf')  format('truetype');
+    src: url('../fonts/futura-pt/FuturaPTDemi.eot');
+    src: url('../fonts/futura-pt/FuturaPTDemi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/futura-pt/FuturaPTDemi.woff') format('woff'),
+    url('../fonts/futura-pt/FuturaPTDemi.ttf')  format('truetype');
 }
 @font-face {
     font-family: 'Gemeli Mono Regular';
-    src: url('./assets/fonts/gemeli-mono/GemeliMonoRegular.eot');
-    src: url('./assets/fonts/gemeli-mono/GemeliMonoRegular.eot?#iefix') format('embedded-opentype'),
-    url('./assets/fonts/gemeli-mono/GemeliMonoRegular.woff') format('woff'),
-    url('./assets/fonts/gemeli-mono/GemeliMonoRegular.ttf')  format('truetype');
+    src: url('../fonts/gemeli-mono/GemeliMonoRegular.eot');
+    src: url('../fonts/gemeli-mono/GemeliMonoRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gemeli-mono/GemeliMonoRegular.woff') format('woff'),
+    url('../fonts/gemeli-mono/GemeliMonoRegular.ttf')  format('truetype');
 }
 @font-face {
     font-family: 'Gemeli Mono LIght';
-    src: url('./assets/fonts/gemeli-mono/GemeliMonoLight.eot');
-    src: url('./assets/fonts/gemeli-mono/GemeliMonoLight.eot?#iefix') format('embedded-opentype'),
-    url('./assets/fonts/gemeli-mono/GemeliMonoLight.woff') format('woff'),
-    url('./assets/fonts/gemeli-mono/GemeliMonoLight.ttf')  format('truetype');
+    src: url('../fonts/gemeli-mono/GemeliMonoLight.eot');
+    src: url('../fonts/gemeli-mono/GemeliMonoLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gemeli-mono/GemeliMonoLight.woff') format('woff'),
+    url('../fonts/gemeli-mono/GemeliMonoLight.ttf')  format('truetype');
 }
 /***************************/
 /*          BASE          */
@@ -257,6 +241,70 @@ table tr td {
 .side-info-font {
     font-family: "Futura PT Light", sans-serif;
     font-size: 12pt;
+}
+/********************************************/
+/*                 THEME                   */
+.dark-theme, .light-theme {
+    transition: all 600ms ease-out;
+    transition-delay: 100ms;
+}
+.dark-theme.dark-bg {
+    background-color: rgb(9, 14, 15);
+}
+.dark-theme.bg-reverse.dark-bg {
+    background-color: rgb(233, 244, 245);
+}
+.dark-theme.dark-dim-bg {
+    background-color: rgba(192, 192, 192, .45);
+}
+.dark-theme.dark-overlay {
+    background-color: rgba(0, 0, 0, .45);
+}
+.dark-theme.dark-fill {
+    fill: rgb(255, 255, 255);
+}
+.dark-theme.dark-color {
+    color: rgb(255, 255, 255);
+}
+.dark-theme.dark-dim-color {
+    color: rgba(192, 192, 192, .45);
+}
+/*********************************************************/
+.light-theme.light-bg {
+    background-color: rgb(233, 244, 245);
+}
+.light-theme.bg-reverse.light-theme {
+    background-color: rgb(9, 14, 15);
+}
+.light-theme.light-dim-bg {
+    background-color: rgba(105, 105, 105, .45);
+}
+.light-theme.light-overlay {
+    background-color: rgba(225, 225, 225, .45);
+}
+.light-theme.light-fill {
+    fill: rgb(0, 0, 0)
+}
+.light-theme.light-color {
+    color: rgb(0, 0, 0);
+}
+.light-theme.dark-dim-color {
+    color: rgba(105, 105, 105, .55);
+}
+/*******************************/
+/*          ELEMENTS          */
+.pointer {
+    cursor: pointer;
+}
+.article-img-wrap img {
+    transform: scale(2.4);
+}
+.img-res {
+    width: 100%;
+    height: auto;
+}
+.h-100 {
+    height: inherit;
 }
 /*************************************/
 /*           SCREEN LOADER          */
@@ -532,55 +580,6 @@ ul.nav-wrapper li.nav-item.active {
     margin: 14px 15px;
     display: inline-block;
     vertical-align: middle;
-}
-/********************************************/
-/*                 THEME                   */
-.dark-theme, .light-theme {
-    transition: all 600ms ease-out;
-    transition-delay: 100ms;
-}
-.dark-theme.dark-bg {
-    background-color: rgb(9, 14, 15);
-}
-.dark-theme.bg-reverse.dark-bg {
-    background-color: rgb(233, 244, 245);
-}
-.dark-theme.dark-dim-bg {
-    background-color: rgba(192, 192, 192, .45);
-}
-.dark-theme.dark-overlay {
-    background-color: rgba(0, 0, 0, .45);
-}
-.dark-theme.dark-fill {
-    fill: rgb(255, 255, 255);
-}
-.dark-theme.dark-color {
-    color: rgb(255, 255, 255);
-}
-.dark-theme.dark-dim-color {
-    color: rgba(192, 192, 192, .45);
-}
-/*********************************************************/
-.light-theme.light-bg {
-    background-color: rgb(233, 244, 245);
-}
-.light-theme.bg-reverse.light-theme {
-    background-color: rgb(9, 14, 15);
-}
-.light-theme.light-dim-bg {
-    background-color: rgba(105, 105, 105, .45);
-}
-.light-theme.light-overlay {
-    background-color: rgba(225, 225, 225, .45);
-}
-.light-theme.light-fill {
-    fill: rgb(0, 0, 0)
-}
-.light-theme.light-color {
-    color: rgb(0, 0, 0);
-}
-.light-theme.dark-dim-color {
-    color: rgba(105, 105, 105, .55);
 }
 /********************************************/
 /*             FANCY CAROUSEL              */
